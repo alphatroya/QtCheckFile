@@ -18,10 +18,12 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+    void reflashWidget();
 
 private:
     Ui::MainWindow *ui;    
     FileFinder findFiles;
+    QTimer timer;
 };
 
 #endif // MAINWINDOW_H
